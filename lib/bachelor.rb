@@ -59,7 +59,7 @@ def get_occupation(data, hometown)
          # right level in the nested hash:
          #    data["season"]["contestants"]["hometown"] and ["occupation]"
          
-  occupation = nil
+
   data.each do |season_hash, contestants_array|
     contestants_array.each do |contestant|
       if contestant["hometown"] == hometown
@@ -70,7 +70,7 @@ def get_occupation(data, hometown)
       end
     end
   end
-  occupation
+  return nil
 end
 
 # def get_average_age_for_season(data, season)
