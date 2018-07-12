@@ -60,8 +60,8 @@ def get_occupation(data, hometown)
          #    data["season"]["contestants"]["hometown"] and ["occupation]"
          
 
-  data.each do |season_name, contestants_array|
-    contestants_array.each do |contestant|
+  data.each do |season_name, contestants|
+    contestants.each do |contestant|
       if contestant["hometown"] == hometown
         return contestant["occupation"] 
         # first time, it is nil
