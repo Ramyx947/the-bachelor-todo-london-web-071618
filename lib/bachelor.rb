@@ -66,6 +66,7 @@ def get_occupation(data, hometown)
         occupation = contestant["occupation"] 
         # first time, it is nil
         # afterwards, set it to "journalist"
+        # second 
       end
     end
   end
