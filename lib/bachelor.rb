@@ -13,19 +13,19 @@ end
 def get_contestant_name(data, occupation)
             # code here
             # returns the name of the woman who has that occupation: Cruise Ship Singer, Community Organizer, Nonprofit director
- people = nil
+  people = nil
   
             #iterate through data hash to the right level
-data.each do |season_hash, contestants_array|
+  data.each do |season_hash, contestants_array|
 
-contestants_array.find do |contestant|
+    contestants_array.find do |contestant|
             #condition
- if contestant["occupation"] == occupation 
-people = contestant["name"]
-end
-end 
-end
-people
+      if contestant["occupation"] == occupation 
+        people = contestant["name"]
+      end
+    end 
+  end
+  people
 end
 
   
