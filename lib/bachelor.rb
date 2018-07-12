@@ -60,7 +60,7 @@ def get_occupation(data, hometown)
          #    data["season"]["contestants"]["hometown"] and ["occupation]"
          
 
-  data.each do |season_hash, contestants_array|
+  data.each do |season_name, contestants_array|
     contestants_array.each do |contestant|
       if contestant["hometown"] == hometown
         return contestant["occupation"] 
