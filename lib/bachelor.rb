@@ -66,7 +66,7 @@ def get_occupation(data, hometown)
         occupation = contestant["occupation"] 
         # first time, it is nil
         # afterwards, set it to "journalist"
-        # second 
+        # afterwards, set it to "jumbotron operator"
       end
     end
   end
