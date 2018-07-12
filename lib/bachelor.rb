@@ -54,13 +54,13 @@ counter
 #people_array.size
 end
 
-def get_occupation(data, hometown)
+def get_occupation(season_hash, hometown)
   # code here
          # right level in the nested hash:
          #    data["season"]["contestants"]["hometown"] and ["occupation]"
          
 
-  data.each do |season_name, contestants_array|
+  season_hash.each do |season_name, contestants_array|
     contestants_array.each do |contestant|
       if contestant["hometown"] == hometown
         return contestant["occupation"] 
