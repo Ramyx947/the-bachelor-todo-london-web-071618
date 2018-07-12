@@ -63,7 +63,7 @@ def get_occupation(data, hometown)
   data.each do |season_hash, contestants_array|
     contestants_array.each do |contestant|
       if contestant["hometown"] == hometown
-        occupation = contestant["occupation"] 
+        return contestant["occupation"] 
         # first time, it is nil
         # afterwards, set it to "journalist"
         # afterwards, set it to "jumbotron operator"
