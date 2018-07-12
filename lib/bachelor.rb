@@ -65,7 +65,7 @@ def get_occupation(data, hometown)
       if contestant["hometown"] == hometown
         return contestant["occupation"] 
         # first time, it is nil
-        # afterwards, set it to "journalist"
+        # return "journalist", we never see "jumbotron operator"
         # afterwards, set it to "jumbotron operator"
       end
     end
